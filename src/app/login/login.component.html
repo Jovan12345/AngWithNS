@@ -1,12 +1,14 @@
-<Page>
-    <FlexboxLayout>
-        <StackLayout class="form">
-            <TextField hint="Email Address" keyboardType="email" autocorrect="false" autocapitalizationType="none"
-                [(ngModel)]="user.email" class="input input-border"></TextField>
-            <TextField hint="Password" secure="true" [(ngModel)]="user.password" class="input input-border"></TextField>
+<FlexboxLayout>
+    <StackLayout class="form">
+        <Image src="https://p1.hiclipart.com/preview/169/1023/715/login-logo-user-users-group-customer-education-button-typeface-credential-png-clipart.jpg"></Image>
 
-            <Button [text]="isLoggingIn ? 'Sign in' : 'Sign up'" class="btn btn-primary" (tap)="submit()"></Button>
-            <Button [text]="isLoggingIn ? 'Sign up' : 'Back to login'" (tap)="toggleDisplay()"></Button>
-        </StackLayout>
-    </FlexboxLayout>
-</Page>
+        <TextField hint="Email Address" keyboardType="email" autocorrect="false" autocapitalizationType="none"
+            [(ngModel)]="user.email" class="input input-border"></TextField>
+        <TextField hint="Password" secure="true" [(ngModel)]="user.password" class="input input-border"></TextField>
+
+        <Button [text]="isLoggingIn ? 'Sign in' : 'Sign up'" class="btn btn-primary" (tap)="submit()"></Button>
+        <Button [text]="isLoggingIn ? 'Sign up' : 'Back to login'" (tap)="toggleDisplay()"></Button>
+    </StackLayout>
+</FlexboxLayout>
+<ActivityIndicator [busy]="isLoading" [visibility]="isLoading ? 'visible' : 'collapse'" row="1"
+    horizontalAlignment="center" verticalAlignment="center"></ActivityIndicator>

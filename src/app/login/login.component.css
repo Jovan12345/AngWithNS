@@ -2,7 +2,7 @@ FlexboxLayout {
     justify-content : center;
     align-items     : center;
     background-size : cover;
-    background-image: url('../images/background.jpg');
+    background-image: url('https://mobilehd.blob.core.windows.net/main/2018/01/background-design-material-abstract-art-desktop-wallpaper-paper-geometric-vector.jpg');
 }
 
 StackLayout {
