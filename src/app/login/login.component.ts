@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { User } from "../shared/user/user.model";
 import { UserService } from "../shared/user/user.service";
 import { Router } from "@angular/router";
-import {Page} from "tns-core-modules/ui/page";
 
 @Component({
   selector: 'ns-login',
@@ -16,11 +15,10 @@ export class LoginComponent {
   isLoggingIn = true;
   isLoading = false;
 
-  constructor(private router: Router, private userService: UserService, page: Page) {
+  constructor(private router: Router, private userService: UserService) {
     this.user = new User();
     this.user.email = "jjoj@gmail.com";
     this.user.password = "jjoj";
-    page.actionBarHidden = true;
   }
 
 

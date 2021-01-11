@@ -1,1 +1,33 @@
-<Label text="Label"></Label>
+<StackLayout>
+    <BottomNavigation>
+        <TabStrip>
+            <TabStripItem>
+                <Label text="List"></Label>
+            </TabStripItem>
+            <TabStripItem>
+                <Label text="Camera"></Label>
+            </TabStripItem>
+        </TabStrip>
+        <TabContentItem>
+            <StackLayout orientation="vertical">
+                <Label text="List Page" class="pageHeading"></Label>
+                <Button text="Get List" (tap)="getJsonApiList()" horizontalAlignment="left"></Button>
+                <ListView [items]="album" rowHeight="50" class="list-group">
+                    <ng-template let-item="item">
+                        <GridLayout columns="100,auto" >
+                            <Image src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1200px-Image_created_with_a_mobile_phone.png' col=""></Image>
+                            <Label [text]='item.title' textWrap="true" col="1"></Label>
+                        </GridLayout>
+                    </ng-template>
+                </ListView>
+            </StackLayout >
+        </TabContentItem>
+        <TabContentItem>
+            <StackLayout orientation="vertical">
+                <Label text="Native APIs Page" class="pageHeading"></Label>
+                <Button text="Take photo" (tap)="takePhoto()" horizontalAlignment="left"></Button>
+                <Image [src]='imgCamera.src' width="75" height="75" ></Image>
+            </StackLayout>
+        </TabContentItem>
+    </BottomNavigation>
+</StackLayout>
