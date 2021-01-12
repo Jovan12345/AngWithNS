@@ -36,6 +36,8 @@
     "kinvey-nativescript-sdk": "^6.0.0",
     "nativescript": "^7.1.2",
     "nativescript-camera": "^4.5.0",
+    "nativescript-geolocation": "^5.1.0",
+    "nativescript-mapbox": "^5.0.1",
     "nativescript-ui-chart": "^8.0.2",
     "reflect-metadata": "~0.1.12",
     "rxjs": "^6.6.0",

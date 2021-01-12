@@ -1,0 +1,13 @@
+Button {
+    height: 70;
+    width: 150;
+    background-color: #8ecb00;
+}
+
+.list-group{
+    padding: 15;
+}
+
+.pageHeading{
+    font-size: 25;
+}

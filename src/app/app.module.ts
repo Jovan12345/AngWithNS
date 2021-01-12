@@ -9,6 +9,8 @@ import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
+import { PostListComponent } from './post-list/post-list.component';
+import { NativeApisComponent } from './native-apis/native-apis.component';
 
 @NgModule({
     bootstrap: [
@@ -24,6 +26,8 @@ import { HomeComponent } from './home/home.component';
         AppComponent,
         LoginComponent,
         HomeComponent,
+        PostListComponent,
+        NativeApisComponent,
     ],
     providers: [],
     schemas: [
