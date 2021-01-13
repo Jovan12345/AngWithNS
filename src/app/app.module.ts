@@ -9,8 +9,9 @@ import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
-import { PostListComponent } from './post-list/post-list.component';
-import { NativeApisComponent } from './native-apis/native-apis.component';
+import { PostListComponent } from './home/post-list/post-list.component';
+import { CameraComponent } from './home/camera/camera.component';
+import { LocationComponent } from './home/location/location.component';
 
 @NgModule({
     bootstrap: [
@@ -27,7 +28,8 @@ import { NativeApisComponent } from './native-apis/native-apis.component';
         LoginComponent,
         HomeComponent,
         PostListComponent,
-        NativeApisComponent,
+        CameraComponent,
+        LocationComponent,
     ],
     providers: [],
     schemas: [

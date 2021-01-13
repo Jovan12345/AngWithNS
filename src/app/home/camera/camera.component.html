@@ -1,0 +1,5 @@
+<StackLayout orientation="vertical">
+    <Label text="Capture the moment :D" class="pageHeading"></Label>
+    <Button class="btn btn-primary" text="Take a picture :)" (tap)="takePhoto()" horizontalAlignment="left"></Button>
+    <Image [src]='saveImage' width="300" height="300"></Image>
+</StackLayout>

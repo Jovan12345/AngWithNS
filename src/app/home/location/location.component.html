@@ -1,0 +1,7 @@
+<StackLayout orientation="vertical">
+    <Label text="See where are you :D" class="pageHeading"></Label>
+    <Button class="btn btn-primary" text="Get Location" (tap)="getLocation()" horizontalAlignment="left"></Button>
+    <MapView #mapView [latitude]="latitude" [longitude]="longitude" [zoom]="zoom" i-padding="50,50,50,50"
+        [padding]="padding" (mapReady)="onMapReady($event)">
+    </MapView>
+</StackLayout>

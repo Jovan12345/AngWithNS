@@ -3,7 +3,7 @@
     <Button text="Get List" (tap)="getJsonApiList()" horizontalAlignment="left"></Button>
     <ListView [items]="album" rowHeight="50" class="list-group">
         <ng-template let-item="item">
-            <GridLayout columns="100,auto" >
+            <GridLayout columns="100,auto" height="50">
                 <Image src='https://wepushbuttons.com.au/wp-content/uploads/2012/03/twitter-logo-small.jpg' col=""></Image>
                 <Label [text]='item.title' textWrap="true" col="1"></Label>
             </GridLayout>

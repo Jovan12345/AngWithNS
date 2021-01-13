@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { JsonPlaceholderService } from '../shared/json-placeholder/json-placeholder.service';
-import { PlaceholderImage } from "../shared/json-placeholder/json-placeholder.model";
+import { JsonPlaceholderService } from '../../shared/json-placeholder/json-placeholder.service';
+import { PlaceholderImage } from "../../shared/json-placeholder/json-placeholder.model";
 
 @Component({
   selector: 'ns-post-list',
