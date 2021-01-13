@@ -9,9 +9,7 @@ import { ImageSource, knownFolders, path } from '@nativescript/core';
   styleUrls: ['./camera.component.css']
 })
 export class CameraComponent {
-
   saveImage;
-
 
   takePhoto() {
     camera.requestPermissions().then(() => {

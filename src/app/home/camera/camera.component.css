@@ -2,6 +2,7 @@ Button {
     height: 70;
     width: 150;
     background-color: #5f00cb;
+    color: white;
 }
 
 .list-group{
